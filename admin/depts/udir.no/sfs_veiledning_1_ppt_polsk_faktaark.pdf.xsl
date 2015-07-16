@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='utf-8'?>
-<!-- Format query results for display --><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Format query results for display -->
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
             <xsl:import href="file:///home/unhammer/.local/lib/python2.7/site-packages/CorpusTools-0.9.0b4-py2.7.egg/corpustools/xslt/common.xsl"/>
 
@@ -9,7 +10,7 @@
 
     <!-- Add the metainformation manually -->
     <!-- variable filename contains the original name of the file (from submitter)-->
-    <xsl:variable name="filename" select="'http://www.udir.no/Upload/PP_tjenesten/PPT_polsk_faktaark.pdf?epslanguage=no'"/>
+    <xsl:variable name="filename" select="'http://www.udir.no/globalassets/upload/pp_tjenesten/ppt_polsk_faktaark.pdf'"/>
     <xsl:variable name="text_encoding" select="''"/>
     <xsl:variable name="title" select="''"/>
     <xsl:variable name="author1_fn" select="''"/>
@@ -94,7 +95,8 @@
         <!-- <language xml:lang="smn"/> -->
         <!-- <language xml:lang="sms"/> -->
         <!-- <language xml:lang="swe"/> -->
-    </xsl:variable>
+    <language xml:lang="pol"/>
+	<language xml:lang="nob"/></xsl:variable>
 
     <!-- If the document has parallel texts, uncomment the right languages
          (or add new lines with the right ISO-639-3 language codes) and
@@ -124,7 +126,21 @@
         <!-- <parallel_text xml:lang="smn" location=""/> -->
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
-    </xsl:variable>
+    <parallel_text xml:lang="ara" location="sfs_veiledning_1_ppt_arabisk_faktaark.pdf"/>
+	<parallel_text xml:lang="ckb" location="sfs_veiledning_1_ppt_sorani_faktaark.pdf"/>
+	<parallel_text xml:lang="eng" location="sfs_veiledning_1_ppt_engelsk_faktaark.pdf"/>
+	<parallel_text xml:lang="fas" location="sfs_veiledning_1_ppt_persisk_faktaark.pdf"/>
+	<parallel_text xml:lang="fra" location="sfs_veiledning_1_ppt_fransk_faktaark.pdf"/>
+	<parallel_text xml:lang="nno" location="sfs_veiledning_1_ppt_nynorsk-faktaark.pdf"/>
+	<parallel_text xml:lang="nob" location="sfs_veiledning_1_ppt_norsk_bokmal_faktaark.pdf"/>
+	<parallel_text xml:lang="rus" location="sfs_veiledning_1_ppt_russisk_faktaark.pdf"/>
+	<parallel_text xml:lang="sma" location="sfs_veiledning_1_ppt_sorsamisk_faktaark.pdf"/>
+	<parallel_text xml:lang="sme" location="sfs_veiledning_1_ppt_nordsamisk_faktaark.pdf"/>
+	<parallel_text xml:lang="smj" location="sfs_veiledning_1_ppt_lulesamisk_faktaark.pdf"/>
+	<parallel_text xml:lang="som" location="sfs_veiledning_1_ppt_somalisk_faktaark.pdf"/>
+	<parallel_text xml:lang="tur" location="sfs_veiledning_1_ppt_tyrkisk_faktaark.pdf"/>
+	<parallel_text xml:lang="urd" location="sfs_veiledning_1_ppt_urdu_faktaark.pdf"/>
+	<parallel_text xml:lang="vie" location="sfs_veiledning_1_ppt_vietnamesisk_faktaark.pdf"/></xsl:variable>
 
 
     <!--
